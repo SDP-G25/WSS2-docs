@@ -236,7 +236,7 @@ caused by `[rule]`, which we discuss in Section 8.3].
 | TC-02-05 | 7.b Another VPN active | [As in UC02: the traffic test can't run until the other VPN is off / record what Android does: it may ask to replace the other VPN] | [result] | [P/F] |
 | TC-02-06 | 11.a Results out of date (no check for about 2 minutes) | The connection check turns grey, **Unknown** | [result] | [P/F] |
 | TC-02-07 | 11.b Connected to the open Evil Twin copy (lab) | **Vulnerable, "This network may not be what it claims. Avoid using it."**, first reason: "A nearby network with this name has a password, but the one you're connected to doesn't…" | [result] | [P/F] |
-| TC-02-08 | Special: the AI result doesn't decide the verdict | The AI result is shown separately and marked experimental (trained on CICIDS2017); the verdict doesn't change with it | [result] | [P/F] |
+| TC-02-08 | Special: the AI model's result has its own card | After a traffic test, the **Traffic Test** card shows how many connections the model checked and how many looked unusual, labelled as an experimental AI model; the connection check card keeps the rule-based verdict | [result] | [P/F] |
 | TC-02-09 | Special: no packet payloads stored | App storage holds no packet contents after a traffic test; only flow statistics | [result] | [P/F] |
 | TC-02-10 | Connected-network rules in the lab (Table [N]) | Each RAP rule and Stage 3 probe gives the expected result | [result] | [P/F] |
 
@@ -375,8 +375,8 @@ Manara's VPN and a full packet capture.
 | [Attack-like traffic type 2] | [N] | [N] ([%]) | [N] ([%]) | [ ] |
 
 The model flagged [X]% of the attack-like flows and [X]% of the normal flows. This means that
-[the model adds a useful signal / the model does not detect these attacks on live traffic, which is
-why Manara presents it as experimental and leaves it out of the verdict].
+[the model adds a useful signal / the model does not detect these attacks on live traffic]. This
+supports showing its result on its own Traffic Test card, beside the rule-based verdict.
 
 ### 8.1.6 Defects found and fixed
 
@@ -619,9 +619,10 @@ objective to the tests that show it was achieved.
 
 - **Deauthentication detection** isn't implemented. Stock Android doesn't give apps 802.11
   management frames, so it would need root and monitor mode.
-- **The AI model is experimental.** It was trained on CICIDS2017 lab traffic, sees only flows the
-  phone starts, and works on rebuilt reply packets. [Live result from Section 8.1.5.] For this
-  reason it is reported separately and never decides the verdict.
+- **The AI model has its own card.** It was trained on CICIDS2017 lab traffic, sees only flows the
+  phone starts, and works on rebuilt reply packets. [Live result from Section 8.1.5.] For these
+  reasons its result is shown on its own Traffic Test card, beside the rule-based verdict, so the
+  user gets the model's view without its lab training raising false alarms on safe networks.
 - **The scores are hand-tuned heuristics, not probabilities.** The real-network baseline
   (Table [N]) is a first calibration; more public networks are needed.
 - **Android limits** affect timing: 4 scans every 2 minutes unless throttling is off, one every
@@ -689,7 +690,8 @@ granted; no other VPN active.
 | 8 | Check post-conditions 1–2 | | | | |
 
 **Post-conditions:** 1. All five stages ran and a verdict with its reasons and coverage is shown.
-2. The AI result is shown separately and didn't decide the verdict.
+2. The AI model's result is shown on its own Traffic Test card, and the connection check keeps the
+rule-based verdict.
 
 ### TC-03-01
 
