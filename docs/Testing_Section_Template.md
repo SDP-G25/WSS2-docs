@@ -88,8 +88,16 @@ Examples of what these tests verify:
   flagged.
 - **The security-downgrade ladder (RAP-1).** WPA3 → WPA2 → WPA → WEP → Open each count as weaker
   than the trusted profile.
-- **The AI result never decides the verdict.** `VerdictMapper` leaves the experimental flow-model
-  finding (`ML.FLOW`) out of the verdict.
+- **The AI model has its own card.** On a connected network's details, the AI model's result
+  appears in a separate **Traffic Test** card, next to the connection check card that holds the
+  rule-based verdict (Secure / Moderate / Vulnerable). After an optional 30-second test, the card
+  reports how many connections the model checked and how many looked unusual, for example "The
+  model checked 24 connections. None looked unusual." The two are kept apart on purpose: the model
+  was trained on CICIDS2017, a lab dataset of network attacks, not on public Wi-Fi traffic, so
+  adding its result to the score could raise false alarms on safe networks and would make the
+  verdict harder to explain. Showing it on its own card gives the user the model's view without
+  weakening the rules. Unit tests check both sides: the card's wording for each model result,
+  and that the model's result stays on its card and doesn't change the verdict.
 - **Score bands.** 75–100 maps to Secure, 40–74 to Moderate and 0–39 to Vulnerable.
 
 **Results.** On 20 November 2026, on commit `edcbea7`, **all 355 tests passed**: 0 failures,
