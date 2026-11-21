@@ -77,8 +77,15 @@ Examples of what these tests verify:
 - **Each pre-connection rule fires once, with its exact penalty.** For example, a WPA-only network
   loses 30 points (PRE-1), and an open network named like a protected one nearby loses 50 more
   (PRE-12). A rule is never counted twice for the same network.
-- **The clone case that cannot be staged live.** Two scan entries with the same SSID and BSSID get
-  PRE-5 (−70).
+- **The clone case, and the rules that catch it on a real phone.** Two scan entries with the same
+  SSID and BSSID get PRE-5 (−70). On a real phone, though, Android merges entries that share a
+  BSSID, so a perfect copy appears as a single entry. Three rules were added to catch it anyway:
+  PRE-13 flags an address that keeps switching between two security modes, bands or radio
+  fingerprints within a few minutes (−70); PRE-14 flags an address whose radio fingerprint (Wi-Fi
+  generation, radio capabilities and chip-maker codes) differs from the one saved when the user
+  connected (−50); and PRE-15 flags a sudden signal rise while the phone lies still (−15). Unit
+  tests cover each rule, including the 24-hour window that stops a firmware update from being
+  flagged.
 - **The security-downgrade ladder (RAP-1).** WPA3 → WPA2 → WPA → WEP → Open each count as weaker
   than the trusted profile.
 - **The AI result never decides the verdict.** `VerdictMapper` leaves the experimental flow-model
@@ -382,8 +389,8 @@ Testing found [N] defects, and [N] were fixed and retested. The [N] remaining on
 every pre-connection rule fires in the lab; the Evil Twin copy is flagged before and after
 connecting]. What is lacking:
 
-- **PRE-5** can't be shown live: Android keeps one scan entry per BSSID, so it is verified by unit
-  test only.
+- **PRE-5** can't be shown live, because Android keeps one scan entry per BSSID, so it is verified
+  by unit tests only. The same attack is covered live by PRE-13 and PRE-14 (Table [N]).
 - **The ML model** [result from 8.1.5].
 - [Any failed test case and its reason.]
 
