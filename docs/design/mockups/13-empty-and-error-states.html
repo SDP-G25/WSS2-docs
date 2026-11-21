@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manara mockup: empty and error states</title>
+<style>
+:root{--text-primary:#1f1f1f;--text-secondary:#5f5f5f;--font-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-mono:ui-monospace,SFMono-Regular,Consolas,monospace;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--text-primary:#ececec;--text-secondary:#a8a8a8}body{background:#161616}}
+body{margin:0;padding:24px 16px;background:#fafafa;color:var(--text-primary);font-family:var(--font-sans)}
+main{max-width:760px;margin:0 auto}
+</style>
+</head>
+<body>
+<main>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Manara empty and error states: Wi-Fi off, location off, nothing in range, Android's scan limit, an empty history list, and Wi-Fi off by day. The lantern shows the radio state, the gallery card under it reports the connection, and the tower reports the list.</h2>
+<style>@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');
+.mg svg text{font-family:var(--font-sans)}.mg .sf{font-family:Fraunces,Georgia,serif}
+.key{background:#0B1A2E;border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:.5rem 0 0}
+.ki{display:flex;gap:8px;align-items:flex-start}.ki svg{flex:none}.ki b{display:block;color:#FAEEDA;font-size:13px;font-weight:500}.ki span{display:block;color:#85B7EB;font-size:12px;line-height:1.35}
+.mg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:.75rem 0 .5rem}
+.cap{font-size:13px;color:var(--text-secondary);margin:6px 2px 0;line-height:1.4}.cap span{color:var(--text-primary);font-weight:500}
+@media (max-width:620px){.key{grid-template-columns:repeat(2,minmax(0,1fr))}}</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><clipPath id="scr"><rect x="6" y="6" width="206" height="428" rx="23"/></clipPath></defs>
+<symbol id="g" viewBox="0 0 100 100"><path d="M50 76 L10.4 36.4 A56 56 0 0 1 89.6 36.4 Z" fill="#FAC775" opacity=".16"/><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9" stroke="#85B7EB" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8" stroke="#FAC775" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7" stroke="#FAEEDA" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M45 83.5 H55 L57 100 H43 Z" fill="#F1EFE8"/><path d="M44.3 89 H55.7 L56.3 95 H43.7 Z" fill="#A32D2D"/><rect x="42" y="81" width="16" height="2.5" fill="#F1EFE8"/><rect x="45" y="72" width="10" height="9" rx="1.5" fill="#EF9F27"/><path d="M43.5 72 L50 66 L56.5 72 Z" fill="#A32D2D"/></symbol>
+<symbol id="gS" viewBox="0 0 100 100"><g fill="none" stroke-width="7" stroke-linecap="round" stroke-dasharray=".5 11" opacity=".6"><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9" stroke="#85B7EB"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8" stroke="#FAC775"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7" stroke="#FAEEDA"/></g><path d="M45 83.5 H55 L57 100 H43 Z" fill="#F1EFE8"/><path d="M44.3 89 H55.7 L56.3 95 H43.7 Z" fill="#A32D2D"/><rect x="42" y="81" width="16" height="2.5" fill="#F1EFE8"/><rect x="45" y="72" width="10" height="9" rx="1.5" fill="#EF9F27"/><path d="M43.5 72 L50 66 L56.5 72 Z" fill="#A32D2D"/></symbol>
+<symbol id="gO" viewBox="0 0 100 100"><g fill="none" stroke="#24405F" stroke-width="7" stroke-linecap="round"><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7"/></g><path d="M45 83.5 H55 L57 100 H43 Z" fill="#8F8D86"/><path d="M44.3 89 H55.7 L56.3 95 H43.7 Z" fill="#6E2727"/><rect x="42" y="81" width="16" height="2.5" fill="#8F8D86"/><rect x="45" y="72" width="10" height="9" rx="1.5" fill="#4A4A47"/><path d="M43.5 72 L50 66 L56.5 72 Z" fill="#6E2727"/></symbol>
+<symbol id="gOD" viewBox="0 0 100 100"><g fill="none" stroke="#BCD6F0" stroke-width="7" stroke-linecap="round"><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7"/></g><path d="M45 83.5 H55 L57 100 H43 Z" fill="#F1EFE8" stroke="#0B1A2E" stroke-width=".7" stroke-opacity=".35"/><path d="M44.3 89 H55.7 L56.3 95 H43.7 Z" fill="#A32D2D" opacity=".45"/><rect x="42" y="81" width="16" height="2.5" fill="#0B1A2E" opacity=".4"/><rect x="45" y="72" width="10" height="9" rx="1.5" fill="#B4B2A9"/><path d="M43.5 72 L50 66 L56.5 72 Z" fill="#A32D2D" opacity=".45"/></symbol>
+<symbol id="aTo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.6 4.6 L12 2.2 L15.4 4.6"/><rect x="9.6" y="4.6" width="4.8" height="3.6" rx=".6"/><path d="M7.6 8.6 H16.4"/><path d="M9.3 8.6 L7.7 20.8 H16.3 L14.7 8.6"/><path d="M8.6 13.2 H15.4 M8.1 17 H15.9"/><path d="M5.6 20.8 H18.4"/></g></symbol>
+<symbol id="aTf" viewBox="0 0 24 24"><g fill="currentColor"><path d="M8.2 4.8 L12 2 L15.8 4.8 Z"/><rect x="9.4" y="4.4" width="5.2" height="4" rx=".7"/><path d="M9.2 9.5 H14.8 L15.35 13.6 H8.65 Z"/><path d="M8.15 17.2 H15.85 L16.3 20.9 H7.7 Z"/></g><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.6 8.6 H16.4"/><path d="M9.3 8.6 L7.7 20.8 H16.3 L14.7 8.6"/><path d="M5.6 20.8 H18.4"/><path d="M3.2 4.2 L6.2 5.4 M20.8 4.2 L17.8 5.4" stroke-width="1.5"/></g></symbol>
+<symbol id="aSo" viewBox="0 0 24 24"><g transform="translate(-1.2 1.6) rotate(-35 12 12)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="11.4" y="8.6" width="9.2" height="6.8" rx="1.2"/><rect x="6.2" y="10.1" width="5.2" height="3.8" rx=".6"/><path d="M3.2 12 H6.2" stroke-width="2.6" stroke-linecap="round"/><path d="M18.2 8.6 V15.4"/></g></symbol>
+<symbol id="aLo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.4 C9.6 5 6.4 4.7 3 5.3 V18.9 C6.4 18.3 9.6 18.6 12 20 C14.4 18.6 17.6 18.3 21 18.9 V5.3 C17.6 4.7 14.4 5 12 6.4 Z"/><path d="M12 6.4 V20"/><path d="M5.9 9.4 H9.2 M5.9 12.4 H9.2 M5.9 15.4 H8"/><path d="M15.4 5.7 V10.6 L16.7 9.5 L18 10.6 V5.3"/></g></symbol>
+<symbol id="aLf" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M11.1 6 C8.9 4.6 6 4.3 2.1 4.8 V19.9 C6 19.2 8.9 19.5 11.1 20.6 Z M5.4 8.6 H9.4 V10.2 H5.4 Z M5.4 11.6 H9.4 V13.2 H5.4 Z M5.4 14.6 H8.2 V16.2 H5.4 Z"/><path fill="currentColor" fill-rule="evenodd" d="M12.9 6 C15.1 4.6 18 4.3 21.9 4.8 V19.9 C18 19.2 15.1 19.5 12.9 20.6 Z M15.2 6.3 H18.1 V11.6 L16.65 10.3 L15.2 11.6 Z"/></symbol>
+<symbol id="aHo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="12" cy="12" r="6.2" stroke-width="1.8"/><circle cx="12" cy="12" r="1.9" stroke-width="1.8"/><path stroke-width="1.6" d="M14.9 12 H20.2 M14.05 14.05 L17.8 17.8 M12 14.9 V20.2 M9.95 14.05 L6.2 17.8 M9.1 12 H3.8 M9.95 9.95 L6.2 6.2 M12 9.1 V3.8 M14.05 9.95 L17.8 6.2"/><path stroke-width="2.8" d="M20.2 12 H21.3 M17.8 17.8 L18.6 18.6 M12 20.2 V21.3 M6.2 17.8 L5.4 18.6 M3.8 12 H2.7 M6.2 6.2 L5.4 5.4 M12 3.8 V2.7 M17.8 6.2 L18.6 5.4"/></g></symbol>
+<symbol id="mS" viewBox="0 0 12 12"><circle cx="6" cy="6" r="3.8" fill="#5DCAA5"/></symbol>
+<symbol id="mM" viewBox="0 0 12 12"><path d="M6 1.4 L10.8 10.4 H1.2 Z" fill="#EF9F27"/></symbol>
+<symbol id="mV" viewBox="0 0 12 12"><circle cx="6" cy="3" r="2.6" fill="#E24B4A"/><circle cx="6" cy="9" r="2.6" fill="#E24B4A"/></symbol>
+<symbol id="mU" viewBox="0 0 12 12"><circle cx="6" cy="6" r="3.6" fill="none" stroke="#B4B2A9" stroke-width="1.5"/></symbol>
+<symbol id="ph" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#0B1A2E" stroke="#F1EFE8" stroke-width="1"/></symbol>
+<symbol id="rr" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.4" fill="none" stroke="#F09595" stroke-width="1.3" stroke-dasharray="2.4 1.8"/></symbol>
+<symbol id="sbN" viewBox="0 0 206 30"><text x="18" y="19" font-size="11" fill="#FAEEDA">9:41</text><g fill="#FAEEDA"><rect x="152" y="14" width="2.5" height="5"/><rect x="156" y="12" width="2.5" height="7"/><rect x="160" y="10" width="2.5" height="9"/><rect x="174" y="12" width="13" height="5"/></g><rect x="172" y="10" width="18" height="9" rx="2.5" fill="none" stroke="#FAEEDA" stroke-width="1"/></symbol>
+<symbol id="sbD" viewBox="0 0 206 30"><text x="18" y="19" font-size="11" fill="#0B1A2E">9:41</text><g fill="#0B1A2E"><rect x="152" y="14" width="2.5" height="5"/><rect x="156" y="12" width="2.5" height="7"/><rect x="160" y="10" width="2.5" height="9"/><rect x="174" y="12" width="13" height="5"/></g><rect x="172" y="10" width="18" height="9" rx="2.5" fill="none" stroke="#0B1A2E" stroke-width="1"/></symbol>
+<symbol id="navN" viewBox="0 0 206 50"><rect width="206" height="50" fill="#0E2742"/><rect x="11" y="3" width="32" height="20" rx="10" fill="#FAC775" opacity=".18"/><use href="#aTf" x="19.5" y="5.5" width="15" height="15" style="color:#FAC775"/><use href="#aSo" x="72.5" y="5.5" width="15" height="15" style="color:#85B7EB"/><use href="#aLo" x="122.5" y="5.5" width="15" height="15" style="color:#85B7EB"/><use href="#aHo" x="170.5" y="5.5" width="15" height="15" style="color:#85B7EB"/><g font-size="11" text-anchor="middle" fill="#85B7EB"><text x="27" y="38" fill="#FAC775">Networks</text><text x="80" y="38">Debugging</text><text x="130" y="38">History</text><text x="178" y="38">Settings</text></g></symbol>
+<symbol id="navH" viewBox="0 0 206 50"><rect width="206" height="50" fill="#0E2742"/><rect x="114" y="3" width="32" height="20" rx="10" fill="#FAC775" opacity=".18"/><use href="#aTo" x="19.5" y="5.5" width="15" height="15" style="color:#85B7EB"/><use href="#aSo" x="72.5" y="5.5" width="15" height="15" style="color:#85B7EB"/><use href="#aLf" x="122.5" y="5.5" width="15" height="15" style="color:#FAC775"/><use href="#aHo" x="170.5" y="5.5" width="15" height="15" style="color:#85B7EB"/><g font-size="11" text-anchor="middle" fill="#85B7EB"><text x="27" y="38">Networks</text><text x="80" y="38">Debugging</text><text x="130" y="38" fill="#FAC775">History</text><text x="178" y="38">Settings</text></g></symbol>
+<symbol id="navD" viewBox="0 0 206 50"><rect width="206" height="50" fill="#FFFFFF"/><path d="M0 .5 H206" stroke="#D6E7F7"/><rect x="11" y="3" width="32" height="20" rx="10" fill="#FAC775" opacity=".4"/><use href="#aTf" x="19.5" y="5.5" width="15" height="15" style="color:#854F0B"/><use href="#aSo" x="72.5" y="5.5" width="15" height="15" style="color:#185FA5"/><use href="#aLo" x="122.5" y="5.5" width="15" height="15" style="color:#185FA5"/><use href="#aHo" x="170.5" y="5.5" width="15" height="15" style="color:#185FA5"/><g font-size="11" text-anchor="middle" fill="#185FA5"><text x="27" y="38" fill="#854F0B">Networks</text><text x="80" y="38">Debugging</text><text x="130" y="38">History</text><text x="178" y="38">Settings</text></g></symbol>
+</svg>
+
+<div class="key" role="list" aria-label="Lamp states and where each message goes">
+<div class="ki" role="listitem"><svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><use href="#g" width="100" height="100"/></svg><div><b>Lit</b><span>Normal. The beam reaches the sea</span></div></div>
+<div class="ki" role="listitem"><svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><use href="#gS" width="100" height="100"/></svg><div><b>Broken beam</b><span>Location off. Android hides what's out there</span></div></div>
+<div class="ki" role="listitem"><svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><use href="#gO" width="100" height="100"/></svg><div><b>Out</b><span>Wi-Fi off. Nothing to scan with</span></div></div>
+<div class="ki" role="listitem"><div><b>Gallery card</b><span>Reports the connection: off, not connected, or the network you're on</span></div></div>
+<div class="ki" role="listitem"><div><b>Tower</b><span>Reports the list: empty, dark, or the last scan</span></div></div>
+</div>
+
+<div class="mg">
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Wi-Fi off at night: the lantern is unlit, the gallery card asks to turn on Wi-Fi and the tower bands are dark"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<circle cx="192" cy="49" r="12" fill="#1B2F4A" stroke="#378ADD" stroke-width=".8"/><text x="192" y="53" font-size="11" font-weight="500" fill="#85B7EB" text-anchor="middle">A</text>
+<use href="#gO" x="50" y="50" width="118" height="118"/>
+<path d="M28 162 H95 M123 162 H190 M32 168 V162 M46 168 V162 M60 168 V162 M74 168 V162 M88 168 V162 M130 168 V162 M144 168 V162 M158 168 V162 M172 168 V162 M186 168 V162" stroke="#8F8D86" stroke-width="1.3" fill="none"/>
+<rect x="26" y="168" width="166" height="92" rx="8" fill="#1B2F4A"/><path d="M26 168.5 H192" stroke="#8F8D86" stroke-width="1.5"/>
+<text x="40" y="190" font-size="13" font-weight="500" fill="#FAEEDA">Wi-Fi is off</text><text x="40" y="207" font-size="11" fill="#85B7EB">Turn it on to see the</text><text x="40" y="221" font-size="11" fill="#85B7EB">networks around you.</text>
+<rect x="40" y="232" width="92" height="22" rx="11" fill="#FAC775"/><text x="86" y="247" font-size="11" font-weight="500" fill="#412402" text-anchor="middle">Turn on Wi-Fi</text>
+<path d="M31.4 260 H186.6 L190.7 301 H27.3 Z" fill="#13263F"/><path d="M27.3 301 H190.7 L194.8 342 H23.2 Z" fill="#1A3150"/><path d="M23.2 342 H194.8 L199 384 H19 Z" fill="#13263F"/>
+<use href="#navN" x="6" y="384" width="206" height="50"/>
+</g><use href="#sbN" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Wi-Fi off</span> · the lamp is out</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Location off at night: the lamp is lit but its arcs are broken, and the gallery card asks to turn on location"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<circle cx="192" cy="49" r="12" fill="#1B2F4A" stroke="#378ADD" stroke-width=".8"/><text x="192" y="53" font-size="11" font-weight="500" fill="#85B7EB" text-anchor="middle">A</text>
+<use href="#gS" x="50" y="50" width="118" height="118"/>
+<path d="M28 162 H95 M123 162 H190 M32 168 V162 M46 168 V162 M60 168 V162 M74 168 V162 M88 168 V162 M130 168 V162 M144 168 V162 M158 168 V162 M172 168 V162 M186 168 V162" stroke="#F1EFE8" stroke-width="1.3" fill="none"/>
+<rect x="26" y="168" width="166" height="108" rx="8" fill="#1B2F4A"/><path d="M26 168.5 H192" stroke="#F1EFE8" stroke-width="1.5"/>
+<text x="40" y="190" font-size="13" font-weight="500" fill="#FAEEDA">Location is off</text><text x="40" y="207" font-size="11" fill="#85B7EB">Android only shows</text><text x="40" y="221" font-size="11" fill="#85B7EB">nearby Wi-Fi when</text><text x="40" y="235" font-size="11" fill="#85B7EB">location is on.</text>
+<rect x="40" y="246" width="108" height="22" rx="11" fill="#FAC775"/><text x="94" y="261" font-size="11" font-weight="500" fill="#412402" text-anchor="middle">Turn on location</text>
+<path d="M29.8 276 H188.2 L191.8 312 H26.2 Z" fill="#13263F"/><path d="M26.2 312 H191.8 L195.4 348 H22.6 Z" fill="#1A3150"/><path d="M22.6 348 H195.4 L199 384 H19 Z" fill="#13263F"/>
+<use href="#navN" x="6" y="384" width="206" height="50"/>
+</g><use href="#sbN" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Location off</span> · the beam is broken</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Nothing in range: the lamp is lit, the gallery says not connected, and the empty tower suggests moving and scanning again"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<text x="109" y="52" font-size="11" fill="#85B7EB" text-anchor="middle">Pull down to scan</text><circle cx="192" cy="49" r="12" fill="#1B2F4A" stroke="#378ADD" stroke-width=".8"/><text x="192" y="53" font-size="11" font-weight="500" fill="#85B7EB" text-anchor="middle">A</text>
+<use href="#g" x="50" y="50" width="118" height="118"/>
+<path d="M28 162 H95 M123 162 H190 M32 168 V162 M46 168 V162 M60 168 V162 M74 168 V162 M88 168 V162 M130 168 V162 M144 168 V162 M158 168 V162 M172 168 V162 M186 168 V162" stroke="#F1EFE8" stroke-width="1.3" fill="none"/>
+<rect x="26" y="168" width="166" height="36" rx="8" fill="#1B2F4A"/><path d="M26 168.5 H192" stroke="#F1EFE8" stroke-width="1.5"/><circle cx="40" cy="186" r="4" fill="none" stroke="#85B7EB" stroke-width="1.3"/><text x="52" y="183" font-size="12" font-weight="500" fill="#FAEEDA">Not connected</text><text x="52" y="197" font-size="11" fill="#85B7EB">Wi-Fi is on</text>
+<path d="M37 204 H181 L185.5 249 H32.5 Z" fill="#13263F"/><path d="M32.5 249 H185.5 L190 294 H28 Z" fill="#1A3150"/><path d="M28 294 H190 L194.5 339 H23.5 Z" fill="#13263F"/><path d="M23.5 339 H194.5 L199 384 H19 Z" fill="#1A3150"/>
+<path d="M58 232 h12 M146 226 h14 M62 362 h14 M146 356 h12" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+<text x="109" y="266" class="sf" font-size="16" fill="#FAEEDA" text-anchor="middle">No Wi-Fi in range</text><text x="109" y="286" font-size="11" fill="#85B7EB" text-anchor="middle">Try another room, or</text><text x="109" y="300" font-size="11" fill="#85B7EB" text-anchor="middle">closer to a window.</text>
+<rect x="64" y="314" width="90" height="26" rx="13" fill="none" stroke="#FAC775" stroke-width="1"/><text x="109" y="331" font-size="12" fill="#FAC775" text-anchor="middle">Scan again</text>
+<use href="#navN" x="6" y="384" width="206" height="50"/>
+</g><use href="#sbN" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Nothing in range</span> · an empty tower</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Android's scan limit: the hint shows when the next scan is allowed, the list is the last scan, and a snackbar explains"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<text x="109" y="52" font-size="11" fill="#85B7EB" text-anchor="middle">Next scan in 1 min</text><circle cx="192" cy="49" r="12" fill="#1B2F4A" stroke="#378ADD" stroke-width=".8"/><text x="192" y="53" font-size="11" font-weight="500" fill="#85B7EB" text-anchor="middle">A</text>
+<use href="#g" x="50" y="50" width="118" height="118"/>
+<path d="M28 162 H95 M123 162 H190 M32 168 V162 M46 168 V162 M60 168 V162 M74 168 V162 M88 168 V162 M130 168 V162 M144 168 V162 M158 168 V162 M172 168 V162 M186 168 V162" stroke="#F1EFE8" stroke-width="1.3" fill="none"/>
+<rect x="26" y="168" width="166" height="36" rx="8" fill="#1B2F4A"/><path d="M26 168.5 H192" stroke="#F1EFE8" stroke-width="1.5"/><circle cx="40" cy="186" r="4" fill="none" stroke="#85B7EB" stroke-width="1.3"/><text x="52" y="183" font-size="12" font-weight="500" fill="#FAEEDA">Not connected</text><text x="52" y="197" font-size="11" fill="#85B7EB">Check before you join</text>
+<path d="M37 204 H181 L184.8 242 H33.2 Z" fill="#F1EFE8"/><text x="48" y="220" font-size="12" font-weight="500" fill="#0B1A2E">Corniche</text><text x="48" y="234" font-size="11" fill="#5F5E5A"><tspan font-weight="500" fill="#0B1A2E">Moderate</tspan> · 1 report</text><use href="#ph" x="158" y="214" width="18" height="18"/><use href="#mM" x="162.5" y="218.5" width="9" height="9"/><use href="#rr" x="158" y="214" width="18" height="18"/>
+<path d="M33.2 242 H184.8 L188.6 280 H29.4 Z" fill="#A32D2D"/><text x="44" y="258" font-size="12" font-weight="500" fill="#FAEEDA">QU-Student</text><text x="44" y="272" font-size="11" fill="#F7C1C1"><tspan font-weight="500" fill="#FAEEDA">Secure</tspan> · WPA2-Ent</text><use href="#ph" x="162" y="252" width="18" height="18"/><use href="#mS" x="166.5" y="256.5" width="9" height="9"/>
+<path d="M29.4 280 H188.6 L192.4 318 H25.6 Z" fill="#F1EFE8"/><rect x="40" y="290" width="6" height="10" rx="1.5" fill="#EF9F27"/><text x="54" y="296" font-size="12" font-weight="500" fill="#0B1A2E">Office_2.4</text><text x="54" y="310" font-size="11" fill="#5F5E5A"><tspan font-weight="500" fill="#0B1A2E">Unknown</tspan> · saved</text><use href="#ph" x="166" y="290" width="18" height="18"/><use href="#mU" x="170.5" y="294.5" width="9" height="9"/>
+<path d="M25.6 318 H192.4 L196.2 356 H21.8 Z" fill="#A32D2D"/><path d="M21.8 356 H196.2 L199 384 H19 Z" fill="#1B2F4A" opacity=".7"/>
+<rect x="14" y="328" width="190" height="42" rx="10" fill="#FAEEDA"/><text x="26" y="345" font-size="11" fill="#0B1A2E">Android limits how often apps</text><text x="26" y="360" font-size="11" fill="#0B1A2E">scan. This is your 9:38 scan.</text>
+<use href="#navN" x="6" y="384" width="206" height="50"/>
+</g><use href="#sbN" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Scan limit</span> · the hint counts down</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="An empty history list drawn as a blank logbook page with one sentence and a button to Settings"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<path d="M26 50 l-6 6 6 6" fill="none" stroke="#FAEEDA" stroke-width="1.6"/><text x="36" y="61" font-size="14" font-weight="500" fill="#FAEEDA">Nearby warnings</text><text x="36" y="77" font-size="11" fill="#85B7EB">Not checked by your phone</text>
+<use href="#aLo" x="67" y="116" width="84" height="84" style="color:#378ADD"/>
+<text x="109" y="232" class="sf" font-size="17" fill="#FAEEDA" text-anchor="middle">No warnings yet</text>
+<g font-size="11" fill="#85B7EB" text-anchor="middle"><text x="109" y="254">Nearby warnings are off.</text><text x="109" y="268">Turn them on to swap warnings</text><text x="109" y="282">with Manara phones near you.</text></g>
+<rect x="34" y="298" width="150" height="34" rx="17" fill="#FAC775"/><text x="109" y="319" font-size="12" font-weight="500" fill="#412402" text-anchor="middle">Turn on in Settings</text>
+<use href="#navH" x="6" y="384" width="206" height="50"/>
+</g><use href="#sbN" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Empty history</span> · a blank logbook page</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Wi-Fi off by day: the unlit lantern in pale day colours with the same gallery card and button"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#E6F1FB"/>
+<circle cx="192" cy="49" r="12" fill="#FFFFFF" stroke="#378ADD" stroke-width=".8"/><text x="192" y="53" font-size="11" font-weight="500" fill="#185FA5" text-anchor="middle">A</text>
+<use href="#gOD" x="50" y="50" width="118" height="118"/>
+<path d="M28 162 H95 M123 162 H190 M32 168 V162 M46 168 V162 M60 168 V162 M74 168 V162 M88 168 V162 M130 168 V162 M144 168 V162 M158 168 V162 M172 168 V162 M186 168 V162" stroke="#0B1A2E" stroke-opacity=".45" stroke-width="1.3" fill="none"/>
+<rect x="26" y="168" width="166" height="92" rx="8" fill="#FFFFFF"/><path d="M26 168.5 H192" stroke="#0B1A2E" stroke-opacity=".45" stroke-width="1.5"/>
+<text x="40" y="190" font-size="13" font-weight="500" fill="#0B1A2E">Wi-Fi is off</text><text x="40" y="207" font-size="11" fill="#185FA5">Turn it on to see the</text><text x="40" y="221" font-size="11" fill="#185FA5">networks around you.</text>
+<rect x="40" y="232" width="92" height="22" rx="11" fill="#EF9F27"/><text x="86" y="247" font-size="11" font-weight="500" fill="#412402" text-anchor="middle">Turn on Wi-Fi</text>
+<path d="M31.4 260 H186.6 L190.7 301 H27.3 Z" fill="#D6E7F7"/><path d="M27.3 301 H190.7 L194.8 342 H23.2 Z" fill="#CADDF1"/><path d="M23.2 342 H194.8 L199 384 H19 Z" fill="#D6E7F7"/>
+<use href="#navD" x="6" y="384" width="206" height="50"/>
+</g><use href="#sbD" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Wi-Fi off, day</span> · same layout, pale lamp</p></div>
+
+</div>
+</main>
+</body>
+</html>

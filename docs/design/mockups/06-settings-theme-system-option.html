@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manara mockup: settings theme system option</title>
+<style>
+:root{--text-primary:#1f1f1f;--text-secondary:#5f5f5f;--font-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-mono:ui-monospace,SFMono-Regular,Consolas,monospace;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--text-primary:#ececec;--text-secondary:#a8a8a8}body{background:#161616}}
+body{margin:0;padding:24px 16px;background:#fafafa;color:var(--text-primary);font-family:var(--font-sans)}
+main{max-width:760px;margin:0 auto}
+</style>
+</head>
+<body>
+<main>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Manara settings screen in night and day mode with a Day, Night and System theme switch, System selected.</h2>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500&family=Fraunces:opsz,wght@9..144,500&display=swap');
+.mg svg text{font-family:var(--font-sans)}.mg .sf{font-family:Fraunces,Georgia,serif}.mg .ar{font-family:'Noto Kufi Arabic',Tahoma,sans-serif}
+.mg{display:grid;grid-template-columns:repeat(2,minmax(0,230px));justify-content:center;gap:24px;padding:.5rem 0}
+.cap{font-size:13px;color:var(--text-secondary);margin:6px 2px 0;line-height:1.4}.cap span{color:var(--text-primary);font-weight:500}</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><clipPath id="scr"><rect x="6" y="6" width="206" height="428" rx="23"/></clipPath></defs>
+<symbol id="g" viewBox="0 0 100 100"><path d="M50 76 L10.4 36.4 A56 56 0 0 1 89.6 36.4 Z" fill="#FAC775" opacity=".16"/><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9" stroke="#85B7EB" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8" stroke="#FAC775" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7" stroke="#FAEEDA" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M45 83.5 H55 L57 100 H43 Z" fill="#F1EFE8"/><path d="M44.3 89 H55.7 L56.3 95 H43.7 Z" fill="#A32D2D"/><rect x="42" y="81" width="16" height="2.5" fill="#F1EFE8"/><rect x="45" y="72" width="10" height="9" rx="1.5" fill="#EF9F27"/><path d="M43.5 72 L50 66 L56.5 72 Z" fill="#A32D2D"/></symbol>
+<symbol id="ic" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0B1A2E"/><use href="#g" width="100" height="100"/></symbol>
+<symbol id="sbN" viewBox="0 0 206 30"><text x="18" y="19" font-size="11" fill="#FAEEDA">9:41</text><g fill="#FAEEDA"><rect x="152" y="14" width="2.5" height="5"/><rect x="156" y="12" width="2.5" height="7"/><rect x="160" y="10" width="2.5" height="9"/><rect x="174" y="12" width="13" height="5"/></g><rect x="172" y="10" width="18" height="9" rx="2.5" fill="none" stroke="#FAEEDA" stroke-width="1"/></symbol>
+<symbol id="sbD" viewBox="0 0 206 30"><text x="18" y="19" font-size="11" fill="#0B1A2E">9:41</text><g fill="#0B1A2E"><rect x="152" y="14" width="2.5" height="5"/><rect x="156" y="12" width="2.5" height="7"/><rect x="160" y="10" width="2.5" height="9"/><rect x="174" y="12" width="13" height="5"/></g><rect x="172" y="10" width="18" height="9" rx="2.5" fill="none" stroke="#0B1A2E" stroke-width="1"/></symbol>
+</svg>
+<div class="mg">
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Night settings with the System theme option selected"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<use href="#ic" x="18" y="40" width="26" height="26"/><text x="52" y="59" class="sf" font-size="17" fill="#FAEEDA">Settings</text><circle cx="190" cy="53" r="13" fill="#1B2F4A" stroke="#378ADD" stroke-width=".8"/><text x="190" y="57" font-size="12" font-weight="500" fill="#85B7EB" text-anchor="middle">A</text>
+<rect x="18" y="78" width="182" height="58" rx="12" fill="#1B2F4A"/><text x="30" y="102" font-size="12" font-weight="500" fill="#FAEEDA">Sign in to Manara</text><text x="30" y="120" font-size="11" fill="#85B7EB">Back up your saved networks</text><path d="M186 102 l4 4 -4 4" fill="none" stroke="#85B7EB" stroke-width="1.4"/>
+<text x="22" y="160" font-size="12" fill="#FAEEDA">Theme</text><rect x="22" y="168" width="174" height="28" rx="14" fill="#0E2742" stroke="#1B2F4A" stroke-width="1"/><rect x="137" y="171" width="56" height="22" rx="11" fill="#FAC775" opacity=".2"/>
+<g font-size="11" text-anchor="middle"><text x="51" y="186" fill="#85B7EB">Day</text><text x="109" y="186" fill="#85B7EB">Night</text><text x="165" y="186" fill="#FAC775">System</text></g><text x="22" y="212" font-size="11" fill="#85B7EB">Follows your phone's dark mode</text>
+<path d="M22 222 H196" stroke="#1B2F4A" stroke-width="1"/><text x="22" y="244" font-size="12" fill="#FAEEDA">Auto-scan</text><rect x="170" y="234" width="26" height="14" rx="7" fill="#EF9F27"/><circle cx="189" cy="241" r="5" fill="#FAEEDA"/><path d="M22 256 H196" stroke="#1B2F4A" stroke-width="1"/>
+<rect x="18" y="270" width="182" height="104" rx="12" fill="#0E2742"/><use href="#ic" x="30" y="284" width="40" height="40"/><text x="80" y="301" class="sf" font-size="17" fill="#FAEEDA">Manara</text><text x="80" y="321" class="ar" font-size="12" fill="#FAC775">منارة</text><text x="30" y="348" font-size="11" fill="#85B7EB">Version 1.0</text><text x="30" y="364" font-size="11" fill="#85B7EB">Database Jul 30, 2026</text>
+<rect x="6" y="384" width="206" height="50" fill="#0E2742"/><g font-size="11" fill="#85B7EB" text-anchor="middle"><text x="33" y="422">Networks</text><text x="86" y="422">Debugging</text><text x="136" y="422">History</text></g><rect x="168" y="388" width="32" height="20" rx="10" fill="#FAC775" opacity=".18"/><circle cx="184" cy="398" r="5.5" fill="none" stroke="#FAC775" stroke-width="1.4"/><circle cx="184" cy="398" r="1.8" fill="#FAC775"/><text x="184" y="422" font-size="11" fill="#FAC775" text-anchor="middle">Settings</text>
+<path d="M30 404 L31.5 392 H34.5 L36 404 Z" fill="#85B7EB"/><circle cx="86" cy="398" r="5.5" fill="none" stroke="#85B7EB" stroke-width="1.4"/><path d="M130 393 h12 M130 398 h12 M130 403 h12" stroke="#85B7EB" stroke-width="1.4"/>
+</g><use href="#sbN" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Phone in dark mode</span> · Manara shows night</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Day settings with the System theme option selected"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#E6F1FB"/>
+<use href="#ic" x="18" y="40" width="26" height="26"/><text x="52" y="59" class="sf" font-size="17" fill="#0B1A2E">Settings</text><circle cx="190" cy="53" r="13" fill="#FFFFFF" stroke="#85B7EB" stroke-width=".8"/><text x="190" y="57" font-size="12" font-weight="500" fill="#185FA5" text-anchor="middle">A</text>
+<rect x="18" y="78" width="182" height="58" rx="12" fill="#FFFFFF"/><text x="30" y="102" font-size="12" font-weight="500" fill="#0B1A2E">Sign in to Manara</text><text x="30" y="120" font-size="11" fill="#185FA5">Back up your saved networks</text><path d="M186 102 l4 4 -4 4" fill="none" stroke="#185FA5" stroke-width="1.4"/>
+<text x="22" y="160" font-size="12" fill="#0B1A2E">Theme</text><rect x="22" y="168" width="174" height="28" rx="14" fill="#FFFFFF" stroke="#B5D4F4" stroke-width="1"/><rect x="137" y="171" width="56" height="22" rx="11" fill="#EF9F27" opacity=".25"/>
+<g font-size="11" text-anchor="middle"><text x="51" y="186" fill="#185FA5">Day</text><text x="109" y="186" fill="#185FA5">Night</text><text x="165" y="186" fill="#854F0B">System</text></g><text x="22" y="212" font-size="11" fill="#185FA5">Follows your phone's dark mode</text>
+<path d="M22 222 H196" stroke="#B5D4F4" stroke-width="1"/><text x="22" y="244" font-size="12" fill="#0B1A2E">Auto-scan</text><rect x="170" y="234" width="26" height="14" rx="7" fill="#EF9F27"/><circle cx="189" cy="241" r="5" fill="#FFFFFF"/><path d="M22 256 H196" stroke="#B5D4F4" stroke-width="1"/>
+<rect x="18" y="270" width="182" height="104" rx="12" fill="#FFFFFF"/><use href="#ic" x="30" y="284" width="40" height="40"/><text x="80" y="301" class="sf" font-size="17" fill="#0B1A2E">Manara</text><text x="80" y="321" class="ar" font-size="12" fill="#854F0B">منارة</text><text x="30" y="348" font-size="11" fill="#185FA5">Version 1.0</text><text x="30" y="364" font-size="11" fill="#185FA5">Database Jul 30, 2026</text>
+<rect x="6" y="384" width="206" height="50" fill="#FFFFFF"/><path d="M6 384.5 H212" stroke="#B5D4F4" stroke-width="1"/><g font-size="11" fill="#185FA5" text-anchor="middle"><text x="33" y="422">Networks</text><text x="86" y="422">Debugging</text><text x="136" y="422">History</text></g><rect x="168" y="388" width="32" height="20" rx="10" fill="#EF9F27" opacity=".22"/><circle cx="184" cy="398" r="5.5" fill="none" stroke="#854F0B" stroke-width="1.4"/><circle cx="184" cy="398" r="1.8" fill="#854F0B"/><text x="184" y="422" font-size="11" fill="#854F0B" text-anchor="middle">Settings</text>
+<path d="M30 404 L31.5 392 H34.5 L36 404 Z" fill="#185FA5"/><circle cx="86" cy="398" r="5.5" fill="none" stroke="#185FA5" stroke-width="1.4"/><path d="M130 393 h12 M130 398 h12 M130 403 h12" stroke="#185FA5" stroke-width="1.4"/>
+</g><use href="#sbD" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Phone in light mode</span> · Manara shows day</p></div>
+
+</div>
+</main>
+</body>
+</html>

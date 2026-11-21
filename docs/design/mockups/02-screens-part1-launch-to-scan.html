@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manara mockup: screens part1 launch to scan</title>
+<style>
+:root{--text-primary:#1f1f1f;--text-secondary:#5f5f5f;--font-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-mono:ui-monospace,SFMono-Regular,Consolas,monospace;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--text-primary:#ececec;--text-secondary:#a8a8a8}body{background:#161616}}
+body{margin:0;padding:24px 16px;background:#fafafa;color:var(--text-primary);font-family:var(--font-sans)}
+main{max-width:760px;margin:0 auto}
+</style>
+</head>
+<body>
+<main>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Manara screens 1 to 6: launcher, splash, permission, sign in, networks tower list and lantern room scan, using the signal-of-light icon and the beam-meets-boat scene.</h2>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500&family=Fraunces:opsz,wght@9..144,500&display=swap');
+.mg svg text{font-family:var(--font-sans)}.mg .sf{font-family:Fraunces,Georgia,serif}.mg .ar{font-family:'Noto Kufi Arabic',Tahoma,sans-serif}.mg .mo{font-family:var(--font-mono)}
+.mg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:.5rem 0}
+.cap{font-size:13px;color:var(--text-secondary);margin:6px 2px 0;line-height:1.4}.cap span{color:var(--text-primary);font-weight:500}</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><clipPath id="scr"><rect x="6" y="6" width="206" height="428" rx="23"/></clipPath></defs>
+<symbol id="g" viewBox="0 0 100 100"><path d="M50 76 L10.4 36.4 A56 56 0 0 1 89.6 36.4 Z" fill="#FAC775" opacity=".16"/><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9" stroke="#85B7EB" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8" stroke="#FAC775" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7" stroke="#FAEEDA" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M45 83.5 H55 L57 100 H43 Z" fill="#F1EFE8"/><path d="M44.3 89 H55.7 L56.3 95 H43.7 Z" fill="#A32D2D"/><rect x="42" y="81" width="16" height="2.5" fill="#F1EFE8"/><rect x="45" y="72" width="10" height="9" rx="1.5" fill="#EF9F27"/><path d="M43.5 72 L50 66 L56.5 72 Z" fill="#A32D2D"/></symbol>
+<symbol id="ic" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0B1A2E"/><use href="#g" width="100" height="100"/></symbol>
+<symbol id="mono" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"><path d="M18.9 44.9 A44 44 0 0 1 81.1 44.9"/><path d="M28.8 54.8 A30 30 0 0 1 71.2 54.8"/><path d="M38.7 64.7 A16 16 0 0 1 61.3 64.7"/></g><g fill="currentColor"><rect x="44" y="73" width="12" height="10" rx="2"/><path d="M42 73 L50 67.5 L58 73 Z"/><path d="M45 85 H55 L57 97 H43 Z"/></g></symbol>
+<symbol id="boat" viewBox="0 0 40 40"><g fill="currentColor"><path d="M5 30 H35 L30.5 36 H9.5 Z"/><path d="M21.5 8 V27 H33 Z"/><path d="M18.5 12 V27 H8.5 Z" opacity=".85"/></g><path d="M20 30 V6" stroke="currentColor" stroke-width="1.6"/></symbol>
+<symbol id="boatL" viewBox="0 0 40 40"><use href="#boat" width="40" height="40"/><circle cx="20" cy="4.5" r="3" fill="#EF9F27"/></symbol>
+<symbol id="boatP" viewBox="0 0 40 40"><use href="#boat" width="40" height="40"/><path d="M20.8 5.5 L30 8.5 L20.8 11.5 Z" fill="#E24B4A"/></symbol>
+<symbol id="sb" viewBox="0 0 206 30"><text x="18" y="19" font-size="11" fill="#FAEEDA">9:41</text><g fill="#FAEEDA"><rect x="152" y="14" width="2.5" height="5"/><rect x="156" y="12" width="2.5" height="7"/><rect x="160" y="10" width="2.5" height="9"/><rect x="174" y="12" width="13" height="5"/></g><rect x="172" y="10" width="18" height="9" rx="2.5" fill="none" stroke="#FAEEDA" stroke-width="1"/></symbol>
+<symbol id="nav" viewBox="0 0 206 50"><rect width="206" height="50" fill="#0E2742"/><g fill="#85B7EB"><path d="M24 20 L25.5 8 H28.5 L30 20 Z"/><circle cx="178" cy="14" r="1.8"/></g><g fill="none" stroke="#85B7EB" stroke-width="1.4"><circle cx="80" cy="14" r="5.5"/><path d="M124 9 h12 M124 14 h12 M124 19 h12"/><circle cx="178" cy="14" r="5.5"/></g><g font-size="11" fill="#85B7EB" text-anchor="middle"><text x="27" y="38">Networks</text><text x="80" y="38">Debugging</text><text x="130" y="38">History</text><text x="178" y="38">Settings</text></g></symbol>
+</svg>
+<div class="mg">
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Android home screen with the Manara icon, a themed icon and a notification"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0E2742"/><circle cx="170" cy="300" r="120" fill="#1B2F4A" opacity=".55"/><circle cx="30" cy="130" r="70" fill="#1B2F4A" opacity=".35"/>
+<rect x="14" y="38" width="190" height="60" rx="14" fill="#F1EFE8"/><circle cx="31" cy="55" r="9" fill="#EF9F27"/><use href="#mono" x="24.5" y="48" width="13" height="13" style="color:#412402"/><text x="46" y="59" font-size="11" fill="#5F5E5A">Manara · now</text><text x="22" y="77" font-size="12" font-weight="500" fill="#0B1A2E">Open network nearby</text><text x="22" y="91" font-size="11" fill="#444441">CafeFree reported unsafe</text>
+<g fill="#378ADD" opacity=".28"><rect x="21" y="118" width="40" height="40" rx="11"/><rect x="69" y="118" width="40" height="40" rx="11"/><rect x="117" y="118" width="40" height="40" rx="11"/><rect x="165" y="118" width="40" height="40" rx="11"/><rect x="21" y="184" width="40" height="40" rx="11"/><rect x="117" y="184" width="40" height="40" rx="11"/><rect x="165" y="184" width="40" height="40" rx="11"/><rect x="21" y="256" width="40" height="40" rx="11"/><rect x="69" y="256" width="40" height="40" rx="11"/><rect x="117" y="256" width="40" height="40" rx="11"/><rect x="28" y="164" width="26" height="4" rx="2"/><rect x="76" y="164" width="26" height="4" rx="2"/><rect x="124" y="164" width="26" height="4" rx="2"/><rect x="172" y="164" width="26" height="4" rx="2"/><rect x="28" y="230" width="26" height="4" rx="2"/><rect x="124" y="230" width="26" height="4" rx="2"/><rect x="172" y="230" width="26" height="4" rx="2"/></g>
+<use href="#ic" x="69" y="184" width="40" height="40"/><text x="89" y="237" font-size="11" fill="#FAEEDA" text-anchor="middle">Manara</text>
+<text x="86" y="342" font-size="11" fill="#85B7EB" text-anchor="middle">Themed icon</text><rect x="16" y="352" width="186" height="58" rx="29" fill="#0B1A2E" opacity=".75"/><g fill="#378ADD" opacity=".28"><circle cx="40" cy="381" r="19"/><circle cx="132" cy="381" r="19"/><circle cx="178" cy="381" r="19"/></g><circle cx="86" cy="381" r="19" fill="#0C447C"/><use href="#mono" x="73" y="367" width="26" height="26" style="color:#B5D4F4"/>
+</g><use href="#sb" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Launcher</span> · icon, themed icon, alert</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Splash screen with the Manara mark centred on night navy"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<circle cx="109" cy="200" r="60" fill="#0E2742"/><use href="#g" x="64" y="150" width="90" height="90"/>
+<text x="109" y="392" class="sf" font-size="20" fill="#FAEEDA" text-anchor="middle">Manara</text><text x="109" y="416" class="ar" font-size="13" fill="#FAC775" text-anchor="middle">منارة</text>
+</g><use href="#sb" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Splash</span> · mark on night navy</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Permission screen with the lighthouse beam crossing sailboats"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<g fill="#FAEEDA" opacity=".5"><circle cx="70" cy="56" r=".9"/><circle cx="150" cy="48" r=".9"/><circle cx="190" cy="84" r=".9"/><circle cx="100" cy="88" r=".9"/><circle cx="24" cy="74" r=".9"/></g>
+<path d="M40 111 L212 118 V200 Z" fill="#FAC775" opacity=".25"/><rect x="6" y="190" width="206" height="250" fill="#0E2742"/><path d="M60 204 h14 M120 210 h16 M30 222 h12 M170 218 h14" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+<ellipse cx="40" cy="191" rx="20" ry="4" fill="#1B2F4A"/><path d="M33 122 H47 L51 190 H29 Z" fill="#F1EFE8"/><path d="M31.9 140 H48.1 L48.8 152 H31.2 Z" fill="#A32D2D"/><path d="M30.6 166 H49.4 L50.1 178 H29.9 Z" fill="#A32D2D"/><rect x="28" y="118" width="24" height="4" fill="#F1EFE8"/><rect x="34" y="104" width="12" height="14" fill="#FAC775"/><path d="M32 104 L40 95 L48 104 Z" fill="#A32D2D"/>
+<use href="#boat" x="104" y="182" width="11" height="11" style="color:#378ADD" opacity=".6"/><use href="#boatP" x="78" y="176" width="18" height="18" style="color:#85B7EB"/><use href="#boat" x="172" y="166" width="28" height="28" style="color:#FAC775"/><use href="#boatL" x="118" y="148" width="48" height="48" style="color:#FAEEDA"/><circle cx="142" cy="153.4" r="7" fill="none" stroke="#FAC775" stroke-width="1" opacity=".7"/>
+<text x="22" y="262" class="sf" font-size="19" fill="#FAEEDA">Find the networks</text><text x="22" y="286" class="sf" font-size="19" fill="#FAEEDA">around you</text><text x="22" y="312" font-size="11" fill="#85B7EB">Manara needs location access</text><text x="22" y="328" font-size="11" fill="#85B7EB">to see Wi-Fi networks nearby.</text>
+<rect x="22" y="352" width="174" height="40" rx="20" fill="#FAC775"/><text x="109" y="377" font-size="13" font-weight="500" fill="#412402" text-anchor="middle">Grant permissions</text>
+</g><use href="#sb" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Permission</span> · boat scene as hero</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Sign in screen with the Manara tile and bilingual wordmark"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<use href="#ic" x="85" y="52" width="48" height="48"/><text x="109" y="128" class="sf" font-size="22" fill="#FAEEDA" text-anchor="middle">Manara</text><text x="109" y="150" class="ar" font-size="13" fill="#FAC775" text-anchor="middle">منارة</text><text x="109" y="176" font-size="11" fill="#85B7EB" text-anchor="middle">Sign in to back up your logbook</text>
+<rect x="22" y="192" width="174" height="34" rx="10" fill="#1B2F4A"/><text x="34" y="213" font-size="11" fill="#85B7EB">name@example.com</text><rect x="22" y="236" width="174" height="34" rx="10" fill="#1B2F4A"/><text x="34" y="257" font-size="11" fill="#85B7EB">Password</text><text x="186" y="257" font-size="11" fill="#FAC775" text-anchor="end">Forgot?</text>
+<rect x="22" y="286" width="174" height="36" rx="18" fill="#FAC775"/><text x="109" y="308" font-size="13" font-weight="500" fill="#412402" text-anchor="middle">Sign in</text><rect x="22" y="332" width="174" height="36" rx="18" fill="none" stroke="#85B7EB" stroke-width="1"/><text x="109" y="354" font-size="12" fill="#FAEEDA" text-anchor="middle">Continue with Google</text>
+<rect x="6" y="404" width="206" height="30" fill="#0E2742"/><use href="#boat" x="150" y="390" width="16" height="16" style="color:#85B7EB"/>
+</g><use href="#sb" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Sign in</span> · tile with both scripts</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Networks tab drawn as lighthouse tower bands with the connected network on the gallery"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<use href="#ic" x="18" y="40" width="26" height="26"/><text x="52" y="59" class="sf" font-size="17" fill="#FAEEDA">Manara</text><circle cx="190" cy="53" r="13" fill="#1B2F4A" stroke="#378ADD" stroke-width=".8"/><text x="190" y="57" font-size="12" font-weight="500" fill="#85B7EB" text-anchor="middle">A</text>
+<text x="109" y="84" font-size="11" fill="#85B7EB" text-anchor="middle">Pull down to scan</text>
+<path d="M109 107 L6 94 V122 Z" fill="#FAC775" opacity=".2"/><path d="M109 107 L212 98 V118 Z" fill="#FAC775" opacity=".1"/><rect x="99" y="100" width="20" height="14" fill="#FAC775"/><path d="M96 100 L109 91 L122 100 Z" fill="#A32D2D"/>
+<rect x="26" y="116" width="166" height="36" rx="8" fill="#1B2F4A"/><path d="M26 116.5 H192" stroke="#F1EFE8" stroke-width="1.5"/><circle cx="40" cy="134" r="4" fill="#EF9F27"/><text x="52" y="131" font-size="12" font-weight="500" fill="#FAEEDA">Home-5G</text><text x="52" y="145" font-size="11" fill="#FAC775">Connected · strong</text><g fill="#FAEEDA"><rect x="166" y="138" width="3" height="4"/><rect x="171" y="135" width="3" height="7"/><rect x="176" y="132" width="3" height="10"/><rect x="181" y="129" width="3" height="13"/></g>
+<path d="M39 152 H179 L182.9 196 H35.1 Z" fill="#F1EFE8"/><text x="50" y="172" font-size="12" font-weight="500" fill="#0B1A2E">Majlis_Guest</text><text x="50" y="187" font-size="11" fill="#5F5E5A">Good · WPA2</text>
+<path d="M35.1 196 H182.9 L186.7 240 H31.3 Z" fill="#A32D2D"/><text x="46" y="216" font-size="12" font-weight="500" fill="#FAEEDA">QU-Student</text><text x="46" y="231" font-size="11" fill="#F7C1C1">Good · WPA2-Ent</text>
+<path d="M31.3 240 H186.7 L190.6 284 H27.4 Z" fill="#F1EFE8"/><rect x="43" y="252" width="6" height="10" rx="1.5" fill="#EF9F27"/><text x="57" y="260" font-size="12" font-weight="500" fill="#0B1A2E">Office_2.4</text><text x="57" y="275" font-size="11" fill="#5F5E5A">Fair · saved</text>
+<path d="M27.4 284 H190.6 L194.4 328 H23.6 Z" fill="#A32D2D"/><text x="40" y="304" font-size="12" font-weight="500" fill="#FAEEDA">CafeFree</text><text x="40" y="319" font-size="11" fill="#F7C1C1">Fair · no password</text><rect x="146" y="294" width="34" height="16" rx="8" fill="#FCEBEB"/><text x="163" y="306" font-size="11" fill="#791F1F" text-anchor="middle">Open</text>
+<path d="M23.6 328 H194.4 L198.3 372 H19.7 Z" fill="#1B2F4A" opacity=".7"/><text x="109" y="354" font-size="11" fill="#85B7EB" text-anchor="middle">5 more in the fog</text>
+<use href="#nav" x="6" y="384" width="206" height="50"/><rect x="17" y="388" width="32" height="20" rx="10" fill="#FAC775" opacity=".18"/><path d="M30 404 L31.5 392 H34.5 L36 404 Z" fill="#FAC775"/><text x="33" y="422" font-size="11" fill="#FAC775" text-anchor="middle">Networks</text>
+</g><use href="#sb" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Networks</span> · mark in header, tower list</p></div>
+
+<div><svg viewBox="0 0 218 440" width="100%" role="img" aria-label="Lantern room scan looking out to sea with sailboats lit by the beam"><rect x="1" y="1" width="216" height="438" rx="28" fill="#050D18"/><g clip-path="url(#scr)"><rect x="6" y="6" width="206" height="428" fill="#0B1A2E"/>
+<g fill="#FAEEDA" opacity=".5"><circle cx="160" cy="92" r=".9"/><circle cx="196" cy="120" r=".9"/><circle cx="130" cy="110" r=".9"/><circle cx="60" cy="100" r=".9"/></g>
+<rect x="6" y="150" width="206" height="290" fill="#0E2742"/><rect x="6" y="150" width="206" height="30" fill="#1B2F4A" opacity=".55"/>
+<path d="M109 392 L92 150 H140 Z" fill="#FAC775" opacity=".07"/><path d="M109 392 L18 150 H92 Z" fill="#FAC775" opacity=".22"/>
+<path d="M30 260 h12 M150 214 h14 M70 300 h16 M180 280 h12" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity=".45"/>
+<use href="#boat" x="150" y="150" width="12" height="12" style="color:#378ADD" opacity=".5"/><use href="#boat" x="190" y="153" width="10" height="10" style="color:#378ADD" opacity=".4"/>
+<use href="#boatP" x="160" y="178" width="20" height="20" style="color:#85B7EB"/><text x="170" y="210" font-size="11" fill="#85B7EB" text-anchor="middle">CafeFree</text>
+<circle cx="62" cy="201" r="15" fill="none" stroke="#FAC775" stroke-width="1" opacity=".6"/><use href="#boat" x="46" y="186" width="32" height="32" style="color:#FAC775"/><text x="62" y="234" font-size="11" fill="#FAC775" text-anchor="middle">QU-Student</text>
+<use href="#boatL" x="128" y="240" width="64" height="64" style="color:#FAEEDA"/><text x="160" y="322" font-size="12" font-weight="500" fill="#FAEEDA" text-anchor="middle">Home-5G</text><text x="160" y="337" font-size="11" fill="#FAC775" text-anchor="middle">connected</text>
+<text x="22" y="54" class="sf" font-size="15" fill="#FAEEDA">Lantern room</text><text x="22" y="70" font-size="11" fill="#85B7EB">Sweeping · 9 networks</text>
+<rect x="6" y="420" width="206" height="14" fill="#1B2F4A"/><path d="M6 362 H212 M24 362 V420 M64 362 V420 M109 362 V420 M154 362 V420 M194 362 V420" stroke="#F1EFE8" stroke-width="2.2"/><path d="M6 394 H212" stroke="#F1EFE8" stroke-width="1.4"/>
+</g><use href="#sb" x="6" y="6" width="206" height="30"/></svg><p class="cap"><span>Lantern room scan</span> · boat scene, live</p></div>
+
+</div>
+</main>
+</body>
+</html>
